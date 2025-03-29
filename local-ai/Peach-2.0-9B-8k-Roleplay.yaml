@@ -1,0 +1,29 @@
+name: Peach-2.0-9B-8k-Roleplay
+parameters:
+  model: huggingface://mradermacher/Peach-2.0-9B-8k-Roleplay-i1-GGUF/Peach-2.0-9B-8k-Roleplay.i1-Q4_K_M.gguf
+  # Taken from model card of original model
+  temperature: 0.5
+  top_p: 0.7
+  repetition_penalty: 1.05
+  eos_token_id: 7
+  max_new_tokens: 512
+context_size: 8192
+mmap: true
+stopwords:
+  - "<|im_end|>"
+  - "<|endoftext|>"
+roles:
+  user: user
+  system: system
+  assistant: character
+template:
+  # Ported from Jinja template in tokenizer_config.json
+  # ChatML based, no tool support, `assistant` is replaced by `character`
+  chat_message: |
+    <|im_start|>{{ .Role }}
+    {{ .Content }}<|im_end|>
+  chat: |
+    {{ .Input -}}
+    <|im_start|>character
+  completion: |
+    {{ .Input }}
