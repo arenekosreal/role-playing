@@ -1,0 +1,18 @@
+- &peach2
+  url: github:arenekosreal/role-playing/mradermacher/Peach-2.0-9B-8k-Roleplay-i1-GGUF/Peach-2.0-9B-8k-Rolepay.yaml
+  name: Peach-2.0-9B-8k-Roleplay
+  icon: https://huggingface.co/ClosedCharacter/Peach-2.0-9B-8k-Roleplay/resolve/main/PeachGirl.png
+  license: mit`
+  urls:
+    - https://huggingface.co/ClosedCharacter/Peach-2.0-9B-8k-Roleplay
+    - https://huggingface.co/mradermacher/Peach-2.0-9B-8k-Roleplay-i1-GGUF
+  description: |
+    Peach-2.0-9B-8k-Roleplay is a chat large language model obtained by finetuning 01-ai/Yi-1.5-9B model on more than 100K conversations created through our data synthesis approach.
+  tags:
+    - llm
+    - gguf
+    - gpu
+    - cpu
+    - llama
+    - nsfw
+    - role-playing
