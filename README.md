@@ -3,28 +3,39 @@
 > [!WARNING]
 > NSFW content included in this repository, use it at your own risk.
 
-## local-ai
+> [!NOTICE]
+> **NOT** [SillyTavern](https://sillytavernai.com) compatible character card.
 
-Some models not included in [LocalAI](https://localai.io)'s official gallery.
+System prompts and other stuff for role-playing witl models.
 
-### Usage
+## Usage
 
-Simply load model with `/models/apply` endpoint or run `local-ai run <model-manifest>.yaml` directly.
+1. Find out which model you want to use.
 
-## system-prompts
+   We use `./huggingface.co/mradermacher/Peach-2.0-9B-8k-Roleplay-i1-GGUF` as an example below.
 
-**NOT** [SillyTavern](https://sillytavernai.com) compatible character card.
+2. Download model if needed.
 
-### Usage
+   Go go `https://huggingface.co/mradermacher/Peach-2.0-9B-8k-Roleplay-i1-GGUF` and download model file.
 
-File path match this pattern: `./system-prompts/<url-to-model>/<language-code>/<character>`
+   You can also use `./huggingface.co/mradermacher/Peach-2.0-9B-8k-Roleplay-i1-GGUF/Peach-2.0-9B-8k-Roleplay.yaml` if you are using [LocalAI](https://localai.io)
 
-For example:
+   As for other models, their url is similar to this, you can build its url by following its path in the repository.
 
-1. Find which model you want to use. Let us say you want `./system-prompts/huggingface.co/mradermacher/Peach-2.0-9B-8k-Roleplay-i1-GGUF`.
-2. Find which language you want to use. We use `zh-cn` as an example here.
-3. Download model if needed: `https://huggingface.co/mradermacher/Peach-2.0-9B-8k-Roleplay-i1-GGUF`
-4. Find which character you want to play. For example, `Vanilla-Maid`.
-5. Launch model with tools you like, such as local-ai, ollama, or even llama.cpp.
-6. Set system prompt to content of file `./system-prompts/huggingface.co/mradermacher/Peach-2.0-9B-8k-Roleplay-i1-GGUF/zh-cn/Vanilla-Maid.md`.
-7. Enjoy.
+3. Ensure language and character.
+
+   For example, `zh-cn` as language and `Vanilla-Maid` as character.
+
+4. Get system prompt.
+
+   It should be placed at `./huggingface.co/mradermacher/Peach-2.0-9B-8k-Roleplay-i1-GGUF/zh-cn/Vanilla-Maid.md`.
+
+   Use **raw content** instead rendered document.
+
+5. Set system prompt.
+
+   Use tools like llama.cpp, ollama, etc.
+   Please ensure the model is supported by the tool. Most of the time this is not a huge problem.
+   Then you must set system prompt to the file mentioned before.
+
+6. Enjoy.
