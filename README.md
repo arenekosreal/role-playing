@@ -3,7 +3,7 @@
 > [!WARNING]
 > NSFW content included in this repository, use it at your own risk.
 
-> [!NOTICE]
+> [!TIP]
 > **NOT** [SillyTavern](https://sillytavernai.com) compatible character card.
 
 System prompts and other stuff for role-playing witl models.
