@@ -1,5 +1,5 @@
 - &peach2
-  url: github:arenekosreal/role-playing/mradermacher/Peach-2.0-9B-8k-Roleplay-i1-GGUF/Peach-2.0-9B-8k-Rolepay.yaml
+  url: github:arenekosreal/role-playing/huggingface.co/mradermacher/Peach-2.0-9B-8k-Roleplay-i1-GGUF/Peach-2.0-9B-8k-Roleplay.yaml
   name: Peach-2.0-9B-8k-Roleplay
   icon: https://huggingface.co/ClosedCharacter/Peach-2.0-9B-8k-Roleplay/resolve/main/PeachGirl.png
   license: mit`
