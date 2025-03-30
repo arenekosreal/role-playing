@@ -16,3 +16,10 @@
     - llama
     - nsfw
     - role-playing
+  overrides:
+    parameters:
+      model: Peach-2.0-9B-8k-Roleplay.i1-Q4_K_M.gguf
+  files:
+    - filename: Peach-2.0-9B-8k-Roleplay.i1-Q4_K_M.gguf
+      sha256: e2514d2c1ef8717cb033697679b234d870ce21d3b9787a63f078386c9ac224ac
+      uri: huggingface://mradermacher/Peach-2.0-9B-8k-Roleplay-i1-GGUF/Peach-2.0-9B-8k-Roleplay.i1-Q4_K_M.gguf
