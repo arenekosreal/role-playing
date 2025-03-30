@@ -6,7 +6,7 @@
 > [!TIP]
 > **NOT** [SillyTavern](https://sillytavernai.com) compatible character card.
 
-System prompts and other stuff for role-playing witl models.
+System prompts and other stuff for role-playing with models.
 
 ## Usage
 
