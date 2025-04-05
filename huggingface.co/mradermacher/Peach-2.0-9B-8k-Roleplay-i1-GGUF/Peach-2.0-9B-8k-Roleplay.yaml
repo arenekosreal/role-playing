@@ -12,6 +12,7 @@ mmap: true
 stopwords:
   - "<|im_end|>"
   - "<|endoftext|>"
+  - "<|im_start|>"
 roles:
   user: user
   system: system
