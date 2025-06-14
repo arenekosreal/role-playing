@@ -9,6 +9,7 @@ parameters:
   max_new_tokens: 512
 context_size: 8192
 mmap: true
+f16: true
 stopwords:
   - "<|im_end|>"
   - "<|endoftext|>"
