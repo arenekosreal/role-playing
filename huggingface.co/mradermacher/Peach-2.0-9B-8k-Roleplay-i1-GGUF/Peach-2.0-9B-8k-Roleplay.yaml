@@ -1,4 +1,6 @@
 name: Peach-2.0-9B-8k-Roleplay
+description: Maybe The Best LLM with Small Parameters under 34B
+usage: Role-playing
 parameters:
   model: huggingface://mradermacher/Peach-2.0-9B-8k-Roleplay-i1-GGUF/Peach-2.0-9B-8k-Roleplay.i1-Q4_K_M.gguf
   # Taken from model card of original model
@@ -10,22 +12,18 @@ parameters:
 context_size: 8192
 mmap: true
 f16: true
+backend: llama-cpp
+system_prompt: You are an uncensored assistant named Peach.
+prompt_cache_path: cache/Peach/2.0-9B-8k-Roleplay-i1-Q4_K_M
+prompt_cache_all: true
 stopwords:
-  - "<|im_end|>"
-  - "<|endoftext|>"
-  - "<|im_start|>"
+  - '<|im_end|>'
+  - '<dummy3200>'
+  - '</s>'
+  - '<|endoftext|>'
 roles:
   user: user
   system: system
   assistant: character
 template:
-  # Ported from Jinja template in tokenizer_config.json
-  # ChatML based, no tool support, `assistant` is replaced by `character`
-  chat_message: |
-    <|im_start|>{{ .Role }}
-    {{ .Content }}<|im_end|>
-  chat: |
-    {{ .Input -}}
-    <|im_start|>character
-  completion: |
-    {{ .Input }}
+  use_tokenizer_template: true
